@@ -1,0 +1,61 @@
+body {
+	background: black;
+}
+* {
+	border: 1px dashed red;
+	min-height: 10px;
+}
+
+.postcard {
+	background: white;
+	width: 400px;
+	height: 300px;
+	margin: auto;
+}
+.postcard-header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.postcard-header img {
+	width: 50px;
+	height: 50px;
+}
+
+.postcard-header h1 {
+	margin: 0;
+	font-size: 24px;
+	flex-grow: 1;
+	text-align: left;
+}
+
+.postcard-body {
+	display: flex; /* Usa flexbox para dividir el contenido en dos columnas */
+	justify-content: space-between; /* Alinea los elementos a los extremos */
+}
+
+.body-left,
+.body-right {
+	width: 48%; /* Ajusta el ancho de cada columna */
+	padding: 10px;
+	box-sizing: border-box;
+	border-radius: 5px;
+}
+
+.postcard-footer {
+	text-align: center; /* Centramos el botón dentro del footer */
+	margin-top: 20px; /* Añade espacio superior opcional */
+}
+
+button {
+	background-color: #333; /* Un color de fondo oscuro */
+	color: white; /* Color del texto del botón */
+	padding: 10px 20px; /* Padding: 10px arriba y abajo, 20px a los lados */
+	border: none; /* Elimina el borde del botón */
+	border-radius: 5px; /* Bordes redondeados */
+	cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+}
+
+button:hover {
+	background-color: #555; /* Cambia el color de fondo al pasar el mouse */
+}
